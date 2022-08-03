@@ -100,7 +100,7 @@ client.on("interactionCreate", async (interaction) => {
             ephemeral: true,
             content: "Ok, no problem",
         });
-        status = false
+        interaction.channel.messages.delete(sentMessage)
     } else if(interaction.customId === "download") {
         try{
             fs.writeFileSync('./src/transcribed.txt', mainTranscribedText)
@@ -134,7 +134,7 @@ client.on("interactionCreate", async (interaction) => {
 });
 
 client.on('messageUpdate', (message)=>{
-    if(status === true || status === false) {
+    if(status === true) {
         message.channel.messages.fetch(sentMessage)
         .then(msg =>{
             msg.delete().then(() => {
