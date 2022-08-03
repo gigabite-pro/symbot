@@ -4,6 +4,9 @@ A bot which accepts an audio file attachment on discord, transcribes it using th
 ### Video
 [![Watch the video](https://img.youtube.com/vi/WrX-YvMX1kE/hqdefault.jpg)](https://youtu.be/WrX-YvMX1kE)
 
+## Testing
+Join our [Discord Server](https://discord.gg/dPdzaMUx) to test symbot.
+
 ## Getting started
 1. Clone the source code and install all the dependencies.
 ```bash
